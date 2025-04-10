@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}About - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<article class="post">
+    {% if SOCIAL %}
+    <div class="social-links">
+        {% for name, url in SOCIAL %}
+        <a href="{{ url }}" target="_blank" rel="noopener noreferrer" title="{{ name }}">
+            <i class="fab fa-{{ name.lower() }}"></i>
+        </a>
+        {% endfor %}
+    </div>
+    {% endif %}
+    
+    <header class="post-header">
+        <h1 class="post-title">About</h1>
+    </header>
+
+    <div class="post-content">
+        {{ page.content }}
+    </div>
+</article>
+{% endblock %} 

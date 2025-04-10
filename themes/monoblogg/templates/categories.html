@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Categories – {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section class="content" aria-labelledby="categories-heading">
+    <h1 id="categories-heading">Categories</h1>
+    <ul>
+        {% for category, articles in categories | sort(attribute='1|length', reverse=True) %}
+            <li>
+                <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a> ({{ articles | length }})
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}

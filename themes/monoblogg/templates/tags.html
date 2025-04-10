@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Tags – {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section class="content" aria-labelledby="tags-heading">
+    <h1 id="tags-heading">Tags</h1>
+    <ul>
+        {% for tag, articles in tags | sort %}
+            <li>
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles | length }})
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}
