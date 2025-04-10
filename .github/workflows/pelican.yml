@@ -26,4 +26,4 @@ jobs:
       
       - name: Build with Pelican
         run: |
-          pelican content -s publishconf.py 
+          pelican content -s publishconf.py -o output 

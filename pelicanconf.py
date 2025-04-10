@@ -11,6 +11,7 @@ TIMEZONE = 'Europe/London'
 # ──────────────── Content paths ────────────────
 PATH = 'content'
 STATIC_PATHS = ['images']
+IGNORE_FILES = ['README.md', '.gitignore', '.gitattributes']
 
 # ──────────────── Theme config ────────────────
 THEME = 'monoblogg'
@@ -27,7 +28,7 @@ SOCIAL = (
     ('GitHub', 'https://github.com/username'),
     ('LinkedIn', 'https://linkedin.com/in/username'),
     ('Twitter', 'https://twitter.com/username'),
-    ('Instagram', 'https://instagram.com/username'),
+    ('Instagram', 'https://instagram.com/in/username'),
 )
 
 # ──────────────── Appearance / Customization ────────────────
