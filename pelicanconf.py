@@ -1,3 +1,5 @@
+import os
+
 # ──────────────── Site identity ────────────────
 AUTHOR = 'John Doe'
 SITENAME = 'My Blog'
@@ -14,7 +16,7 @@ STATIC_PATHS = ['images']
 IGNORE_FILES = ['README.md', '.gitignore', '.gitattributes']
 
 # ──────────────── Theme config ────────────────
-THEME = 'monoblogg'
+THEME = os.path.join(os.path.dirname(__file__), 'themes', 'monoblogg')
 THEME_STATIC_DIR = 'static'
 
 # ──────────────── Navigation ────────────────
