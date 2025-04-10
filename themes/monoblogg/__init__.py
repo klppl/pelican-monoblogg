@@ -1,0 +1,3 @@
+"""
+Monoblogg theme for Pelican
+""" 
