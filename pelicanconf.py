@@ -35,7 +35,7 @@ SOCIAL = (
 
 # ──────────────── Appearance / Customization ────────────────
 FOOTER_TEXT = 'Powered by Pelican and Monoblogg theme'
-AVATAR_URL = '{static}/images/avatar.png'
+AVATAR_URL = SITEURL + '/images/avatar.png'
 
 # ──────────────── Open Graph metadata ────────────────
 OG_TITLE = SITENAME
